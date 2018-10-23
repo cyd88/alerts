@@ -22,4 +22,7 @@ public class GithubRepo {
     @JsonProperty("language")
     private String language;
 
+    public boolean isModified(ZonedDateTime current) {
+        return updatedAt.isAfter(current.minusMonths(3));
+    }
 }
