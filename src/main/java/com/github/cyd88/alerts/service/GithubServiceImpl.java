@@ -32,5 +32,4 @@ public class GithubServiceImpl implements GithubService {
         return response.getBody();
     }
 
-
 }
